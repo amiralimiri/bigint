@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1554987495 source:d:\ap\ò«—ê«Â\bigint\bigint\main.cpp
+	<iostream>
+	<string>
+	"bigInt.h"
+
+1554987150 d:\ap\ò«—ê«Â\bigint\bigint\include\bigint.h
+	<string>
+	<iostream>
+	<stdlib.h>
+
+1554987748 source:d:\ap\ò«—ê«Â\bigint\bigint\src\bigint.cpp
+	"bigInt.h"
+
