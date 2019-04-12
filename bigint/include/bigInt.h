@@ -12,15 +12,16 @@ class bigInt
 		bigInt(string s);
 		~bigInt();
 		void show();
-		void operator+(bigInt& b ) ;
+		bigInt operator+(bigInt& b ) ;
 		int get_n();
 		void set_n(int x);
+		void insert(char x);
 	protected:
 
 	private:
 
 		int n;
-		char* arr;
+		string arr;
 
 };
 

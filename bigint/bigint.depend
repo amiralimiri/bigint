@@ -12,3 +12,21 @@
 1554987748 source:d:\ap\樓褠清\bigint\bigint\src\bigint.cpp
 	"bigInt.h"
 
+1555094310 source:d:\ap\樓褠清\big\bigint\bigint\main.cpp
+	<iostream>
+	<string>
+	"bigInt.h"
+
+1555093039 d:\ap\樓褠清\big\bigint\bigint\include\bigint.h
+	<string>
+	<iostream>
+	<stdlib.h>
+
+1554988901 source:d:\ap\樓褠清\big\bigint\bigint\src\runparti.cpp
+	"runParti.h"
+
+1554988901 d:\ap\樓褠清\big\bigint\bigint\include\runparti.h
+
+1555094310 source:d:\ap\樓褠清\big\bigint\bigint\src\bigint.cpp
+	"bigInt.h"
+

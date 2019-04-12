@@ -5,9 +5,12 @@ using namespace std;
 
 int main()
 {
-	bigInt a("123");
-	bigInt b("123");
-	a+b;
+	bigInt a("123456709");
+	bigInt b("1");
+	bigInt c=a+b;
+	//b.insert('2');
+	//b.show();
+	c.show();
 	//a.show();
 	//c.show();
 

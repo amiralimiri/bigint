@@ -11,6 +11,11 @@ bigInt::~bigInt()
 {
 }
 
+void bigInt::insert(char x)
+{
+    arr[n++]=x;
+}
+
 void bigInt::show()
 {
 	for(int i=n-1;i>=0;i--)
@@ -28,33 +33,58 @@ void bigInt::set_n(int x)
 	n=x;
 }
 
-void bigInt::operator+( bigInt& b )
+bigInt bigInt::operator+( bigInt& b )
 {
-    int next=0,h,w;
-    char* ae;
+    int next=0,h,w,j;
+    bigInt c("");
     if(n<=b.get_n())
-		h=n;
+    {
+        h=n;
+        j=b.get_n();
+    }
 	else
-		h=b.get_n();
-
+    {
+        h=b.get_n();
+        j=n;
+    }
     int i=0;
 	for(i=0;i<h;i++)
     {
         w=next+arr[i]+b.arr[i]-96;
-        cout<<w;
-        if(w>10)
+        if(w>=10)
 		{
 			next=1;
 			w%=10;
-			ae[i]=w;
+			c.insert(w+48);
 		}
 		else
 		{
 			next=0;
-			ae[i]=w;
+			c.insert(w+48);
 		}
     }
+    if (j==0)
+        return c;
 
+    if(n<=b.get_n())
+    {
+        for(;i<j;i++)
+        {
+            w=next+b.arr[i]-48;
+            c.insert(w+48);
+            next=0;
+        }
+    }
+    else
+    {
+        for(;i<j;i++)
+        {
+            w=next+arr[i]-48;
+            c.insert(w+48);
+            next=0;
+        }
+    }
+    return c;
 
 
 }
